@@ -14,7 +14,9 @@ to [onShape](https://www.onshape.com/en/).
 
 Imported all the current parts. This is a visualization of how the parts will be placed in the final case.
 
-The battery holder, charger, IMU and servo driver remains.
+> *changed the servo models to more accurate ones, added IMU*
+
+The battery holder, charger and servo driver remains.
 
 -----------------------------------------------------------
 
