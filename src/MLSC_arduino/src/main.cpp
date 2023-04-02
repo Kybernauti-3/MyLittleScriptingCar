@@ -39,5 +39,5 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   Motor.tick();
-  if (!Motor.getSteps()) { Motor.setRPM(0); }  // This protects the motor from overheating
+  if (!Motor.getSteps()) { Motor.setRPM(0); }   // This protects the motor from overheating
 }
