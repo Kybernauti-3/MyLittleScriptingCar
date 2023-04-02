@@ -29,3 +29,5 @@ TODO:
 - [ ] Add some use for the camera
 - [ ] Finalize
 - [ ] Play with it :)
+
+> Yep, that's right, I haven't completed any of these yet...
