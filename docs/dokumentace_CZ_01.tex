@@ -19,6 +19,7 @@
 \usepackage{enumitem}
 \usepackage{tocbibind}
 \usepackage{courier}
+\usepackage{pdfpages}
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks,
@@ -62,69 +63,8 @@
 	\end{titlepage}
 	
 	% Zadání
-	\newpage
+	\includepdf[pages=-]{Zadani_RP_TL_22_23.pdf}
 	\thispagestyle{empty}
-	\begin{center}
-		\centering
-		\begin{tabular}{m{0.2\linewidth}m{0.8\linewidth}}
-			\includegraphics[width=1\linewidth]{SPSE_logo.png}
-			&\centering
-			\textbf{Vyšší odborná škola a}\par
-			\textbf{Střední průmyslová škola elektrotechnická}\par
-			\textbf{Plzeň, Koterovská 85}\par
-		\end{tabular}
-		\centering
-		\vfill
-		% Spodní část titulní stránky
-		\def\arraystretch{1.8}
-		\begin{tabular}{|l|c|}
-			\hline
-			\multicolumn{2}{|c|}{\textbf{\MakeUppercase{Zadání ročníkové práce}}} \\
-			\hline
-			Školní rok				&	2022 / 2023 \\
-			\hline
-			Studijní obor			&	78-42-M/01 Technické lyceum \\
-			\hline
-			Jméno a příjmení		&	Jan Ocelík \\
-			\hline
-			Třída					&	3. L \\
-			\hline
-			Předmět					&	Kybernetika \\
-			\hline
-			Hodnoceno v předmětu	&	Kybernetika \\
-			\hline
-			Téma					&	Programovatelné auto \\
-			\hline
-			Obsah práce				&	\parbox{.6\textwidth}{\def\arraystretch{1}
-			\begin{enumerate}[noitemsep]
-				\item Sehnání součástek
-				\item Design a tisk modelu (šasi auta)
-				\item Sestavení prototypu
-				\item Vytvoření Framework/SDK/API
-				\item Naprogramování
-			\end{enumerate}} \\
-			\hline
-			\def\arraystretch{1}
-			\begin{tabular}{@{}l}Zadávající učitel
-			\\ Příjmení, jméno\end{tabular}
-									&	Švihla Jiří \\
-			\hline
-			\def\arraystretch{1}
-			\begin{tabular}{@{}l}Podpis zadávajícího
-			\\ učitele\end{tabular}
-									&	\\
-			\hline
-			Termín odevzdání		&	28. dubna 2023 \\
-			\hline
-		\end{tabular}
-		\vfill
-		\begin{tabular}{m{0.5\linewidth}m{0.5\linewidth}}
-			V Plzni dne: 30. 11. 2022
-			&\centering
-			Mgr. Jan Syřínek, v.r. \par
-			ředitel školy
-		\end{tabular}
-	\end{center}
 	
 	% Anotace
 	\newpage
