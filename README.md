@@ -21,7 +21,7 @@ These are the components (and their 3D models) I'm going to use in this projekt:
 TODO:
 
 - [x] Gather all sources
-- [ ] Design chassis
+- [x] Design chassis
 - [ ] Print and ready the chassis
 - [ ] Complete the hardware
 - [ ] Write the software
