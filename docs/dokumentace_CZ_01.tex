@@ -1,13 +1,14 @@
-\documentclass{article}
+\documentclass[12pt]{article}
 \usepackage{blindtext}
 \usepackage{geometry}
 \geometry{
- a4paper,
- left=40mm,
- right=15mm,
- top=30mm,
- bottom=30mm,
+	a4paper,
+	left=40mm,
+	right=15mm,
+	top=30mm,
+	bottom=35mm,
  }
+\usepackage{setspace}
 % Seznam balíků
 \usepackage{comment}
 \usepackage{lmodern}
@@ -44,7 +45,7 @@
 	\begin{titlepage}
 		\centering
 		\begin{tabular}{m{0.2\linewidth}m{0.8\linewidth}}
-			\includegraphics[width=1\linewidth]{SPSE_logo.png}
+			\includegraphics[width=\linewidth]{SPSE_logo.png}
 			&\centering
 			\textbf{Vyšší odborná škola}\par
 			\textbf{a Střední průmyslová škola elektrotechnická}\par
@@ -70,17 +71,20 @@
 			Hodnocení:			&	\\
 		\end{tabular}
 	\end{titlepage}
-	
+
 	% Zadání
-	\includepdf[pages=-]{Zadani_RP_TL_22_23.pdf}
 	\thispagestyle{empty}
+	\includepdfset{offset=15mm 0mm,noautoscale,pages={-},pagecommand={}}
+	\includepdf[pages=1]{Zadani_RP_TL_22_23.pdf}
+	
+	\begin{spacing}{1.5}
 	
 	% Anotace
 	\newpage
 	\thispagestyle{empty}
 	\section*{Anotace}
 	\addcontentsline{toc}{section}{Anotace}
-	\paragraph{} Cílem této ročníkové práce je za pomoci opensource programů navrhnout a z opensource komponent poskládat robotické autíčko pro začátečníky i pokročilé s možností jednoduchého sestavení. Dalším úkolem je vyvinout firmware a API pro jednoduché skriptové programovaní i komplexnější programování s využitím obrazového vstupu. Dalším úkolem je připravit úkázkové příklady kódu k předvedení jednotlivých funkčí robota. Posledním úkolem je zpříjemnit práci s robotem, zhodnotit přínosy a možnosti využití projektu ve vzdělávání a vypracovat potřebnou dokumentaci.
+	\paragraph{} Cílem této ročníkové práce je za pomoci opensource programů navrhnout a z opensource komponent poskládat robotické autíčko pro začátečníky i pokročilé s možností jednoduchého sestavení. Dalším úkolem je vyvinout firmware a API pro jednoduché skriptové programovaní i komplexnější programování s využitím obrazového vstupu. Dalším úkolem je připravit ukázkové příklady kódu k předvedení jednotlivých funkcí robota. Posledním úkolem je zpříjemnit práci s robotem, zhodnotit přínosy a možnosti využití projektu ve vzdělávání a vypracovat potřebnou dokumentaci.
 	\vfill
 	\paragraph{} „Prohlašuji, že jsem tuto práci vypracoval samostatně a použil literárních pramenů a informací, které cituji a uvadím v seznamu použité literatury a zdrojů informací.“
 	\paragraph{} „Souhlasím s využitím mé práce učteli VOŠ a SPŠE Plzeň k výuce.“
@@ -103,18 +107,68 @@
 	\addcontentsline{toc}{section}{Úvod}
 	\paragraph{} V dnešní době se stále více hovoří o automatizaci a digitalizaci a tyto trendy mají velký vliv na společnost. Robotika a autonomní systémy jsou jednou z klíčových oblastí, které se rozvíjejí v rámci těchto trendů a mají potenciál změnit mnoho aspektů našeho života.
 	\paragraph{} Vzdělávání a výuka v této oblasti se také stávají stále důležitějšími, protože mnoho pracovních pozic, které budou v budoucnosti vyžadovat znalosti robotiky a programování, ještě neexistuje. Výuka v této oblasti tak může být klíčová pro přípravu studentů na pracovní trh budoucnosti.
-	\paragraph{} Proto jsem se rozhodl věnovat svou ročníkovou práci právě problematicerobotiky a vytvořit autonomní auto, které bude sloužit jako výuková pomůcka. Můj záměr je ukázat, jak moderní technologie mohou být využity k tomu, aby byly studenti lépe připraveni na budoucí výzvy v oblasti robotiky a informatiky.
+	\paragraph{} Proto jsem se rozhodl věnovat svou ročníkovou práci právě problematice robotiky a vytvořit autonomní auto, které bude sloužit jako výuková pomůcka. Můj záměr je ukázat, jak moderní technologie mohou být využity k tomu, aby byly studenti lépe připraveni na budoucí výzvy v oblasti robotiky a informatiky.
 	\paragraph{} Při tvorbě prototypu se budu snažit využít nejnovější poznatky v oblasti robotiky a programování, a to jak z teoretického hlediska, tak z praktického testování. Cílem bude vytvořit zařízení, které bude snadno ovladatelné a srozumitelné pro studenty různých věkových kategorií, a zároveň bude dostatečně funkční a výkonné pro splnění zadaných úkolů.
 	\paragraph{} Věřím, že tato ročníková práce přispěje k popularizaci robotiky a podpoří zájem studentů o tuto oblast. Tím může mít pozitivní vliv na jejich budoucí kariéru a na rozvoj robotiky v České republice.
 	
 	% Cíle a požadavky
 	\newpage
 	\section{Cíle a požadavky}
-	\paragraph{} Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec vitae arcu. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Phasellus rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas libero. Aliquam ante. Nullam dapibus fermentum ipsum. Quisque tincidunt scelerisque libero. Aliquam id dolor. Donec quis nibh at felis congue commodo. Suspendisse sagittis ultrices augue. Mauris elementum mauris vitae tortor. Vivamus porttitor turpis ac leo. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-	\paragraph{} Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Maecenas lorem. Fusce wisi. Fusce nibh. Mauris elementum mauris vitae tortor. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Maecenas lorem. Pellentesque pretium lectus id turpis. Maecenas libero. Fusce tellus. Fusce nibh. Aenean fermentum risus id tortor. Mauris dictum facilisis augue. Curabitur vitae diam non enim vestibulum interdum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-	\paragraph{} Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sollicitudin. Pellentesque ipsum. Donec quis nibh at felis congue commodo. Etiam dui sem, fermentum vitae, sagittis id, malesuada in, quam. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Quisque tincidunt scelerisque libero. Donec iaculis gravida nulla. Vestibulum fermentum tortor id mi. Cras elementum. Integer lacinia. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Nullam rhoncus aliquam metus. Aliquam erat volutpat. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem. Etiam neque.
 	
+	\subsection{Komponenty (Moduly)}
+	\paragraph{} Hlavním cílem této ročníkové práce je návrh a výroba robota ze všem dostupných materiálů, v tomto případě ze snadno sehnatelných modulů.
+	\paragraph{} Moduly by měly být zároveň opensource, aby si software pro ně mohl programovat každý, který se k robotovi dostane, nebo si ho sám vyrobí.
+	\paragraph{} Důležitý je také výběr napájení, v případě robotického auta tedy baterie, tak, aby udrželo robota v provozu po přiměřeně dlouhou dobu a aby zároveň dokázalo vykrýt proudové špičky.
+	
+	\subsection{Šasi (tělo)}
+	\paragraph{} Tělo robota by mělo být vyrobeno tak, aby bylo plně uzavíratelné, tedy bezpečné pro jakýkoli přenos i při nešetrném zacházení, ale aby se dal robot také provozovat s plně přístupnými veškerými propojkami a bylo tedy snadné ladit jeho hardware za provozu.
+	
+	\subsection{API}
+	\paragraph{} Jedním z dalších požadavků je co nejvíce zpříjemnit uživateli práci s robotickým autem, tedy vytvořit nějaké API nebo knihovnu.
+	\paragraph{} Nedílnou součástí je také dokumentace k danému API/knihovně a to proto, aby si i nově příchozí uživatel zvládl bez jakékoli pomoci robota pomocí daného API/knihovny naprogramovat.
+	
+	% Návrhový software
 	\newpage
-	\paragraph{} Aliquam erat volutpat. Fusce aliquam vestibulum ipsum. Vestibulum fermentum tortor id mi. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Ut tempus purus at lorem. Integer pellentesque quam vel velit. Maecenas lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas aliquet accumsan leo. Vivamus luctus egestas leo. Integer malesuada. Pellentesque sapien. Nullam faucibus mi quis velit. Aliquam erat volutpat. Suspendisse nisl.
+	\section{Návrhový software}
+	
+	\subsection{Onshape}
+	\paragraph{} Onshape je online software pro návrh 3D součástí. V programu se vytváří takzvaný dokument, ve kterém se nadále dají zakládat \uv{studia}. Onshape nabízí mnoho zajímavých možností, typického uživatele však zajímají tato tři hlavní studia - \textbf{Part Stuido}, \textbf{Assembly} a \textbf{Drawing}.
+	\subsubsection*{Part Studio}
+	\paragraph{} Part Studio slouží, jak už název napovídá, k vytváření jednotlivých dílů. Díly se vytvářejí a upravují pomocí příkazů, jako například \textbf{Sketch}, sloužící k sestrojení 2D náčrtu, \textbf{Extrude}, k \uv{vytáhnutí} náčrtu do třetího rozměru, nebo \textbf{Fillet}, k zaoblení hran. Tyto příkazy lze vyvolat kliknutím na jejich ikonu v horní liště programu, přepsáním jejich názvu do \textbf{Search tools}, nebo, u některých více používaných, klávesovými zkratkami.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\linewidth]{images/part_studio.png}
+		\caption{Part Studio}
+		\label{fig:part_studio}
+	\end{figure}
+	
+	\subsubsection*{Assembly}
+	\paragraph{} Další studio v programu Onshape, Assmebly, slouží ke spojování (nebo alespoň aranžování) jednotlivých dílů. K tomuto účelu slouží příkazy, které se, opět, nechají vyvolat několika způsoby, včetně klepnutím na ikonu v horní liště studia. Další výhodnou funkcí tohoto studia je \textbf{Create Part Studio in context}, což dělá přesně to, co se v názvu píše; vytvoří studio dílu v kontextu se sestavou. Tato funkce může hodně usnadnit vytváření některých dílů.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\linewidth]{images/assembly_studio.png}
+		\caption{Assembly}
+		\label{fig:assembly_studio}
+	\end{figure}
+	
+	\subsubsection*{Drawing}
+	\paragraph{} Drawing se dá vyvolat jak samostatně, tak rovnou v kontextu s daným dílem a to jak z Part Stuido, tak z Assembly. Uživateli stačí, kdy v seznamu dílů vybere danou položku a přes kontextové menu vybere možnost \textbf{Create Drawing of...}. Výkres se zde upravuje také pomocí příkazů, stejně jako v předešlých studiích. \textbf{Drawing} studio umožňuje také globální nastavení kót, písma, čar atd.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=\linewidth]{images/drawing_studio.png}
+		\caption{Drawing}
+		\label{fig:drawing_studio}
+	\end{figure}
+	
+	\subsection{Code OSS/VS Code}
+	\subsubsection{dsadasdas}
+	\subsubsection{dasdsadsa}
+	\subsubsection{dsadsadsa}
+	
+\end{spacing}
+
 \end{document}
 % Konec dokumentu

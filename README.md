@@ -22,8 +22,8 @@ TODO:
 
 - [x] Gather all sources
 - [x] Design chassis
-- [ ] Print and ready the chassis
-- [ ] Complete the hardware
+- [x] Print and ready the chassis
+- [x] Complete the hardware
 - [ ] Write the software
 - [ ] Write the framework
 - [ ] Add some use for the camera

@@ -11,17 +11,6 @@ int pins[PINCOUNT] = {8, 9, 10, 11};
 
 unsigned long last;
 
-bool clockwise[STEPS][PINCOUNT] = {
-  {0, 0, 0, 1},
-  {0, 0, 1, 1},
-  {0, 0, 1, 0},
-  {0, 1, 1, 0},
-  {0, 1, 0, 0},
-  {1, 1, 0, 0},
-  {1, 0, 0, 0},
-  {1, 0, 0, 1}
-};
-
 EightStepMotor Motor(REVOLUTION, pins[0], pins[1], pins[2], pins[3]);
 
 void setup() {
