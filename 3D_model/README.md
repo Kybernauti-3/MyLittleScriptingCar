@@ -1,10 +1,9 @@
 # 3D model for the car
 
-This is a folder with all 3D model files.
+This is a folder with images of all 3D models.
 
-The [car_model.FCStd](./car_model.FCStd) is deprecated,
-because I moved from [FreeCAD](https://www.freecadweb.org/)
-to [onShape](https://www.onshape.com/en/).
+The parts were made (and are stored) in
+[onShape](https://www.onshape.com/en/).
 
 -----------------------------------------------------------
 
@@ -14,12 +13,14 @@ to [onShape](https://www.onshape.com/en/).
 
 Imported all the current parts. This is a visualization of how the parts will be placed in the final case.
 
-> *changed the servo models to more accurate ones, added IMU*
+> Actually made it completely different...
 
-The battery holder, charger and servo driver remains.
+![image](whole_assembly.png)
+
+This is the whole assembly: All components + created parts
 
 -----------------------------------------------------------
 
-*There are no other files, because they're stored in the onShape cloud: [MyLittleScriptingCar](https://cad.onshape.com/documents/853826ab736a7e89ca60314d/w/e4e5486c53d8f1f4ba14f67f/e/c2fb18a20a1dab14190ffd40)*
+*The whole model can be found on the onShape cloud: [MyLittleScriptingCar](https://cad.onshape.com/documents/853826ab736a7e89ca60314d/w/e4e5486c53d8f1f4ba14f67f/e/c2fb18a20a1dab14190ffd40)*
 
 *The model is also under HUGE development and I just don't want to spend that much time just exporting and copying files.*
