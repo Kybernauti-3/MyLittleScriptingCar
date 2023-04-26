@@ -30,6 +30,7 @@
 \usepackage{tocbibind}
 \usepackage{courier}
 \usepackage{pdfpages}
+\usepackage{float}
 \usepackage{hyperref}
 \hypersetup{
 	colorlinks,
@@ -136,7 +137,7 @@
 	\subsubsection*{Part Studio}
 	\paragraph{} Part Studio slouží, jak už název napovídá, k vytváření jednotlivých dílů. Díly se vytvářejí a upravují pomocí příkazů, jako například \textbf{Sketch}, sloužící k sestrojení 2D náčrtu, \textbf{Extrude}, k \uv{vytáhnutí} náčrtu do třetího rozměru, nebo \textbf{Fillet}, k zaoblení hran. Tyto příkazy lze vyvolat kliknutím na jejich ikonu v horní liště programu, přepsáním jejich názvu do \textbf{Search tools}, nebo, u některých více používaných, klávesovými zkratkami.
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=\linewidth]{images/part_studio.png}
 		\caption{Part Studio}
@@ -146,7 +147,7 @@
 	\subsubsection*{Assembly}
 	\paragraph{} Další studio v programu Onshape, Assmebly, slouží ke spojování (nebo alespoň aranžování) jednotlivých dílů. K tomuto účelu slouží příkazy, které se, opět, nechají vyvolat několika způsoby, včetně klepnutím na ikonu v horní liště studia. Další výhodnou funkcí tohoto studia je \textbf{Create Part Studio in context}, což dělá přesně to, co se v názvu píše; vytvoří studio dílu v kontextu se sestavou. Tato funkce může hodně usnadnit vytváření některých dílů.
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=\linewidth]{images/assembly_studio.png}
 		\caption{Assembly}
@@ -156,7 +157,7 @@
 	\subsubsection*{Drawing}
 	\paragraph{} Drawing se dá vyvolat jak samostatně, tak rovnou v kontextu s daným dílem a to jak z Part Stuido, tak z Assembly. Uživateli stačí, kdy v seznamu dílů vybere danou položku a přes kontextové menu vybere možnost \textbf{Create Drawing of...}. Výkres se zde upravuje také pomocí příkazů, stejně jako v předešlých studiích. \textbf{Drawing} studio umožňuje také globální nastavení kót, písma, čar atd.
 	
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=\linewidth]{images/drawing_studio.png}
 		\caption{Drawing}
@@ -164,20 +165,36 @@
 	\end{figure}
 	
 	\subsection{Code OSS/VS Code}
-	\paragraph{} Code OSS je opensource IDE vyvíjené firmou Microsoft. Vzniklo jako konkurent programu Atom, který po nějaké době rozválcoval. Stal se tak oblíbeným hlavně díky podpoře obrovského množství programovacích i značkovacích jazyků (např. python, c++, java, php, xml, html, markdown). Má také velice intuitivní ovládání a šikovně zvolenou paletu barev.
+	\paragraph{} Code OSS je opensource IDE vyvíjené firmou Microsoft. Vzniklo jako konkurent programu Atom, který nedávno rozválcoval. Stal se tak oblíbeným hlavně díky podpoře obrovského množství programovacích i značkovacích jazyků (např. python, c++, java, xml, html). Má také velice intuitivní ovládání a šikovně zvolenou paletu barev.
 	
-	\begin{figure}[h]
+	\paragraph{} Code OSS a Vicual Studio Code jsou téměř identické programy, jediným pozorovatelným rozdílem je absence některých rozšíření v \uv{marketplace} v Code OSS (i to se dá ale snadno opravit).
+	
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=\linewidth]{images/code_oss.png}
 		\caption{Code OSS}
 		\label{fig:code_oss}
 	\end{figure}
 	
-	\paragraph{} Code OSS a Vicual Studio Code jsou téměř identické programy, jediným pozorovatelným rozdílem je absence některých rozšíření v \uv{marketplace} v Code OSS (i to se dá ale snadno opravit).
-	
 	\subsubsection*{PlatformIO}
-	\paragraph{} Platformio je rozšíření do VS Code umožňující překlad C++ kódu a následný upload do předdefinovaných jednočipů (např. atmega328). Je to šikovný kus softwaru s několika užitečnými funkcemi navíc, jako např. automatická detekce zařízení.
+	\paragraph{} Platformio je rozšíření do VS Code umožňující překlad C++ kódu a následný upload do předdefinovaných jednočipů (např. atmega328). Je to šikovný kus softwaru s několika užitečnými funkcemi navíc, jako např. automatická detekce zařízení, seznam dostupných knihoven, snadná instalace a integrace daných knihoven do projeků.
 	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=\linewidth]{images/platformio.png}
+		\caption{PlatformIO}
+		\label{fig:platformio}
+	\end{figure}
+	
+	% Výrobní technologie
+	\newpage
+	\section{Výrobní technologie}
+	\subsection{3D tisk}
+	\paragraph{} 3D tisk je moderní technologie, která umožňuje vytvářet fyzické objekty ze 3D digitálních modelů. Tento proces začíná vytvořením digitálního modelu pomocí počítačového softwaru. Poté je tento digitální model převeden do formátu, který je kompatibilní s 3D tiskárnou. V průběhu tiskového procesu se materiál, obvykle termoplastického typu, zahřívá a aplikuje na specifická místa v souladu s digitálním modelem. Tento postup se opakuje vrstva po vrstvě, dokud není celý objekt hotov.
+	
+	\paragraph{} 3D tisk má mnoho výhod. Například umožňuje rychlé prototypování a výrobu malých sérií komplexních geometrických objektů. To se stává velmi užitečné v oblasti průmyslové výroby, kde může být vytvoření prototypu značně nákladné a časově náročné. Díky 3D tisku se náklady na výrobu mohou snížit a doba výroby může být zkrácena.
+	
+	\paragraph{} V posledních letech se cena 3D tiskáren snížila a uživatelé si mohou tisknout vlastní návrhy přímo z domova. Tato technologie také umožňuje vytvářet přizpůsobené a jedinečné předměty, což je velmi užitečné pro řadu různých aplikací, včetně medicíny, průmyslu a uměleckých oborů.
 \end{spacing}
 
 \end{document}
