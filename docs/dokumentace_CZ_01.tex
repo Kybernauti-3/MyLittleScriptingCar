@@ -40,6 +40,7 @@
 	urlcolor=black
 }
 \usepackage{times}
+\graphicspath{{./images/}}
 
 % Začátek dokumentu
 \begin{document}
@@ -47,7 +48,7 @@
 	\begin{titlepage}
 		\centering
 		\begin{tabular}{m{0.2\linewidth}m{0.8\linewidth}}
-			\includegraphics[width=\linewidth]{SPSE_logo.png}
+			\includegraphics[width=\linewidth]{SPSE_logo}
 			&\centering
 			\textbf{Vyšší odborná škola}\par
 			\textbf{a Střední průmyslová škola elektrotechnická}\par
@@ -140,7 +141,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\linewidth]{images/part_studio.png}
+		\includegraphics[width=\linewidth]{part_studio}
 		\caption{Part Studio}
 		\label{fig:part_studio}
 	\end{figure}
@@ -150,7 +151,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\linewidth]{images/assembly_studio.png}
+		\includegraphics[width=\linewidth]{assembly_studio}
 		\caption{Assembly}
 		\label{fig:assembly_studio}
 	\end{figure}
@@ -160,7 +161,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\linewidth]{images/drawing_studio.png}
+		\includegraphics[width=\linewidth]{drawing_studio}
 		\caption{Drawing}
 		\label{fig:drawing_studio}
 	\end{figure}
@@ -169,7 +170,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\linewidth]{images/code_oss.png}
+		\includegraphics[width=\linewidth]{code_oss}
 		\caption{Code OSS}
 		\label{fig:code_oss}
 	\end{figure}
@@ -183,7 +184,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\linewidth]{images/platformio.png}
+		\includegraphics[width=\linewidth]{platformio}
 		\caption{PlatformIO}
 		\label{fig:platformio}
 	\end{figure}
@@ -202,7 +203,7 @@
 	
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=\linewidth]{images/tisk_kostra_kryt.jpg}
+		\includegraphics[width=\linewidth]{tisk_kostra_kryt}
 		\caption{Vytištěný model kostry, kol a kluzáků auta; Tisk modelu krytu}
 		\label{fig:tisk_kostra_kryt}
 	\end{figure}
@@ -211,11 +212,31 @@
 	\newpage
 	\section{Vybrané komponenty (moduly)}
 	\subsection{Řídící modul - Arduino Nano klon}
-	\paragraph{} Pro ovládání motorů bylo nutné vybrat \uv{řídící jednotku}. Pro tento účel a kvůli rozměrům se jeví jako jasná volba Arduino Nano, ale kvůli ceně je lepší
+	\paragraph{} Pro ovládání motorů bylo nutné vybrat \uv{řídící jednotku}. Pro tento účel a kvůli rozměrům se jeví jako jasná volba Arduino Nano, ale kvůli ceně bylo lepší sáhnout po dostupnějším klonu.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=240pt]{robotdyn-arduino-nano-v3}
+		\caption{Robotdyn Arduino Nano V3 \textit{[Zdroj: laskakit.cz]}}
+		\label{fig:nano_v3}
+	\end{figure}
 	\subsection{Terminál}
-	\subsection{Krokový motor}
-	\subsection{Řadič k motoru}
+	\paragraph{} Piny na arduinu jsou přístupné pouze ze spodní strany desky, což je vzhledm k jeho umístění v robotovi dosti nešikovné. Elegantním řešením problému je takzvaný terminál.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=240pt]{arduino-nano-terminal}
+		\caption{Arduino Nano Terminál \textit{[Zdroj: techfun.sk]}}
+		\label{fig:nano_terminal}
+	\end{figure}
+	\subsection{Krokový motor a řadič}
+	\paragraph{} Kvůli předpokládanému univerzálnímu využití robota bylo nutné zvolit vhodný pohon. Tím se ukázaly být krokové motory. K motorům jsou potřeba také řadiče a to kvůli velkým proudům, které mohou motory procházet.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=240pt]{stepper_modul}
+		\caption{Krokový motor 28BYJ-48 a modul ULN2003 \textit{[Zdroj: dratek.cz]}}
+		\label{fig:stepper_modul}
+	\end{figure}
 	\subsection{Přepínač}
+	\paragraph{} 
 	\subsection{Ultrazvukový senzor}
 	\subsection{Převodník logických hodnot}
 	\subsection{Držák baterie}

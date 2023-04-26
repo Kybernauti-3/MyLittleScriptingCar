@@ -6,8 +6,8 @@
 #define STEPS 8
 #define REVOLUTION 4096
 
-#define TRIGGER_PIN  7   // Arduino pin tied to trigger pin on ping sensor.
-#define ECHO_PIN     6   // Arduino pin tied to echo pin on ping sensor.
+#define TRIGGER_PIN  6   // Arduino pin tied to trigger pin on ping sensor.
+#define ECHO_PIN     7   // Arduino pin tied to echo pin on ping sensor.
 #define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum sensor distance is rated at 400-500cm.
 
 int rpm = -15;
