@@ -9,26 +9,29 @@ class EightStepMotor {
     // constructor:
     EightStepMotor(int revolution, int pin_1, int pin_2, int pin_3, int pin_4);
 
-    // method for setting the speed:
-    void setRPM(float rpm);
+    // method for setting the speed (IMPORTANT! the input is rpm*10):
+    void setRPM(short rpm);
 
     // method for setting the steps to move the motor:
     void setSteps(long steps_count);
 
-    // Main loop that takes care of moving the motor
-    void tick();
+    // Main loop that takes care of moving the motor; returns true when steps reaches 0
+    bool tick();
 
     // method for getting left steps:
     long getSteps();
 
+    // method for getting real rpm:
+    short getRPM();
+
   private:
     void stepMotor(bool clockwise);
 
-    bool clockwise;           // Direction of rotation
-    bool running;             // Determines, wether the motor is running, or not
-    unsigned long timer_us;   // delay between steps, in us, based on speed
-    int revolution;           // total number of steps this motor can take
-    long steps_left;           // how many steps are left, if negative, go continuously, if 0, stop
+    bool clockwise;            // Direction of rotation
+    bool running;              // Determines, wether the motor is running, or not
+    unsigned long timer_us;    // delay between steps, in us, based on speed
+    int revolution;            // total number of steps this motor can take
+    unsigned long steps_left;  // how many steps are left, if negative, go continuously, if 0, stop
 
     // pin states (values):
     byte out_1;
