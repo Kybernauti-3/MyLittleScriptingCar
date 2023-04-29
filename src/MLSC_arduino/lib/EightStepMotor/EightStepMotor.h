@@ -10,7 +10,7 @@ class EightStepMotor {
     EightStepMotor(int revolution, int pin_1, int pin_2, int pin_3, int pin_4);
 
     // method for setting the speed:
-    void setRPM(long rpm);
+    void setRPM(float rpm);
 
     // method for setting the steps to move the motor:
     void setSteps(long steps_count);

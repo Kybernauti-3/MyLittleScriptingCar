@@ -26,6 +26,7 @@
 \usepackage{subcaption}
 \usepackage{array}
 \usepackage{multirow}
+\usepackage{tabularray}
 \usepackage{enumitem}
 \usepackage{tocbibind}
 \usepackage{courier}
@@ -111,8 +112,8 @@
 	\paragraph{} V dnešní době se stále více hovoří o automatizaci a digitalizaci a tyto trendy mají velký vliv na společnost. Robotika a autonomní systémy jsou jednou z klíčových oblastí, které se rozvíjejí v rámci těchto trendů a mají potenciál změnit mnoho aspektů našeho života.
 	\paragraph{} Vzdělávání a výuka v této oblasti se také stávají stále důležitějšími, protože mnoho pracovních pozic, které budou v budoucnosti vyžadovat znalosti robotiky a programování, ještě neexistuje. Výuka v této oblasti tak může být klíčová pro přípravu studentů na pracovní trh budoucnosti.
 	\paragraph{} Proto jsem se rozhodl věnovat svou ročníkovou práci právě problematice robotiky a vytvořit autonomní auto, které bude sloužit jako výuková pomůcka. Můj záměr je ukázat, jak moderní technologie mohou být využity k tomu, aby byli studenti lépe připraveni na budoucí výzvy v oblasti robotiky a informatiky.
-	\paragraph{} Při tvorbě prototypu se budu snažit využít nejnovější poznatky v oblasti robotiky a programování, a to jak z teoretického hlediska, tak z praktického testování. Cílem bude vytvořit zařízení, které bude snadno ovladatelné a srozumitelné pro studenty různých věkových kategorií, a zároveň bude dostatečně funkční a výkonné pro splnění zadaných úkolů.
-	\paragraph{} Věřím, že tato ročníková práce přispěje k popularizaci robotiky a podpoří zájem studentů o tuto oblast. Tím může mít pozitivní vliv na jejich budoucí kariéru a na rozvoj robotiky v České republice.
+	\paragraph{} Při tvorbě prototypu se budu snažit využít nejnovější poznatky v oblasti robotiky a programování, a to jak z teoretického hlediska, tak praktických zkušeností z mých předchozích aktivit. Cílem bude vytvořit zařízení, které bude snadno ovladatelné a srozumitelné pro studenty různých věkových kategorií, a zároveň bude dostatečně funkční a výkonné pro splnění zadaných úkolů.
+	\paragraph{} Věřím, že tato ročníková práce přispěje k popularizaci robotiky a podpoří zájem studentů o tuto oblast. To může mít pozitivní vliv na jejich budoucí kariéru a na rozvoj robotiky v České republice.
 	
 	% Cíle a požadavky
 	\newpage
@@ -124,11 +125,11 @@
 	\paragraph{} Důležitý je také výběr napájení, v případě robotického auta tedy baterie, tak, aby udrželo robota v provozu po přiměřeně dlouhou dobu a aby zároveň dokázalo vykrýt proudové špičky.
 	
 	\subsubsection{Šasi (tělo)}
-	\paragraph{} Tělo robota by mělo být vyrobeno tak, aby bylo plně uzavíratelné, tedy bezpečné pro jakýkoli přenos i při nešetrném zacházení, ale aby se dal robot také provozovat s plně přístupnými veškerými propojkami a bylo tedy snadné ladit jeho hardware za provozu.
+	\paragraph{} Tělo robota by mělo být vyrobeno tak, aby bylo plně uzavíratelné, tedy bezpečné pro jakýkoli přenos i při nešetrném zacházení, ale aby se dal robot také provozovat s plně přístupnými veškerými propojkami a bylo tedy snadné ladit jeho software za provozu.
 	
 	\subsubsection{API}
 	\paragraph{} Jedním z dalších požadavků je co nejvíce zpříjemnit uživateli práci s robotickým autem, tedy vytvořit nějaké API nebo knihovnu.
-	\paragraph{} Nedílnou součástí je také dokumentace k danému API/knihovně a to proto, aby si i nově příchozí uživatel zvládl bez jakékoli pomoci robota pomocí daného API/knihovny naprogramovat.
+	\paragraph{} Nedílnou součástí je také dokumentace k danému API/knihovně a to proto, aby si i nový uživatel zvládl bez jakékoli pomoci robota pomocí daného API/knihovny naprogramovat.
 	
 	% Návrhový software
 	\newpage
@@ -147,7 +148,7 @@
 	\end{figure}
 	
 	\subsubsection*{Assembly}
-	\paragraph{} Další studio v programu Onshape, Assembly, slouží ke spojování (nebo alespoň aranžování) jednotlivých dílů. K tomuto účelu slouží příkazy, které se opět nechají vyvolat několika způsoby, včetně klepnutím na ikonu v horní liště studia. Další výhodnou funkcí tohoto studia je \textbf{Create Part Studio in context}, což dělá přesně to, co se v názvu píše; vytvoří studio dílu v kontextu se sestavou. Tato funkce může hodně usnadnit vytváření některých dílů.
+	\paragraph{} Další studio v programu Onshape, Assembly, slouží ke spojování (nebo alespoň aranžování) jednotlivých dílů. K tomuto účelu slouží příkazy, které se opět nechají vyvolat několika způsoby, včetně klepnutí na ikonu v horní liště studia. Další výhodnou funkcí tohoto studia je \textbf{Create Part Studio in context}, což dělá přesně to, co se v názvu píše; vytvoří studio dílu v kontextu se sestavou. Tato funkce může hodně usnadnit vytváření některých dílů.
 	
 	\begin{figure}[H]
 		\centering
@@ -157,7 +158,7 @@
 	\end{figure}
 	
 	\subsubsection*{Drawing}
-	\paragraph{} Drawing se dá vyvolat jak samostatně, tak rovnou v kontextu s daným dílem a to jak z Part Stuido, tak z Assembly. Uživateli stačí, kdy v seznamu dílů vybere danou položku a přes kontextové menu vybere možnost \textbf{Create Drawing of...}. Výkres se zde upravuje také pomocí příkazů, stejně jako v předešlých studiích. \textbf{Drawing} studio umožňuje také globální nastavení kót, písma, čar atd.
+	\paragraph{} Drawing se dá vyvolat jak samostatně, tak rovnou v kontextu s daným dílem a to jak z Part Stuido, tak z Assembly. Uživateli stačí, když v seznamu dílů vybere danou položku a přes kontextové menu vybere možnost \textbf{Create Drawing of...}. Výkres se zde upravuje také pomocí příkazů, stejně jako v předešlých studiích. \textbf{Drawing} studio umožňuje také globální nastavení kót, písma, čar atd.
 	
 	\begin{figure}[H]
 		\centering
@@ -175,12 +176,12 @@
 		\label{fig:code_oss}
 	\end{figure}
 	
-	\paragraph{} Code OSS je opensource IDE vyvíjené firmou Microsoft. Vzniklo jako konkurent programu Atom, který se nyní již nevyvíjí. Stal se tak oblíbeným hlavně díky podpoře obrovského množství programovacích i značkovacích jazyků (např. python, c++, java, xml, html). Má také velice intuitivní ovládání a šikovně zvolenou paletu barev.
+	\paragraph{} Code OSS je opensource IDE vyvíjené firmou Microsoft. Vzniklo jako konkurent programu Atom, který se nyní již nevyvíjí. Stal se oblíbeným hlavně díky podpoře obrovského množství programovacích i značkovacích jazyků (např. python, c++, java, xml, html). Má také velice intuitivní ovládání a šikovně zvolenou paletu barev.
 	
 	\paragraph{} Code OSS a Visual Studio Code jsou téměř identické programy, jediným pozorovatelným rozdílem je absence některých rozšíření v \uv{marketplace} v Code OSS (i to se dá ale snadno opravit).
 	
 	\subsubsection*{PlatformIO}
-	\paragraph{} Platformio je rozšíření do VS Code umožňující překlad C++ kódu a následný upload do předdefinovaných jednočipů (např. atmega328). Je to šikovný kus softwaru s několika užitečnými funkcemi navíc, jako např. automatická detekce zařízení, seznam dostupných knihoven, snadná instalace a integrace daných knihoven do projeků.
+	\paragraph{} Platformio je rozšíření do VS Code umožňující překlad C++ kódu a následný upload do předdefinovaných jednočipů (např. atmega328). Je to šikovný kus softwaru s několika užitečnými funkcemi navíc, jako např. automatická detekce zařízení, seznam dostupných knihoven, snadná instalace a integrace daných knihoven do projeků a další.
 	
 	\begin{figure}[H]
 		\centering
@@ -195,7 +196,7 @@
 	\subsubsection{3D tisk}
 	\paragraph{} 3D tisk je moderní technologie, která umožňuje vytvářet fyzické objekty ze 3D digitálních modelů. Tento proces začíná vytvořením digitálního modelu pomocí počítačového softwaru. Poté je tento digitální model převeden do formátu, který je kompatibilní s 3D tiskárnou. V~průběhu tiskového procesu se materiál, obvykle termoplastického typu, zahřívá a aplikuje na specifická místa v souladu s digitálním modelem. Tento postup se opakuje vrstva po vrstvě, dokud není celý objekt hotov.
 	
-	\paragraph{} 3D tisk má mnoho výhod. Například umožňuje rychlé prototypování a výrobu malých sérií komplexních geometrických objektů. To se stává velmi užitečné v oblasti průmyslové výroby, kde může být vytvoření prototypu značně nákladné a časově náročné. Díky 3D tisku se náklady na výrobu mohou snížit a doba výroby může být zkrácena.
+	\paragraph{} 3D tisk má mnoho výhod, například umožňuje rychlé prototypování a výrobu malých sérií komplexních geometrických objektů. To se stává velmi užitečné v oblasti průmyslové výroby, kde může být vytvoření prototypu značně nákladné a časově náročné. Díky 3D tisku se náklady na výrobu mohou snížit a doba výroby může být zkrácena.
 	
 	\paragraph{} V posledních letech se cena 3D tiskáren snížila a uživatelé si mohou tisknout vlastní návrhy přímo z domova. Tato technologie také umožňuje vytvářet přizpůsobené a jedinečné předměty, což je velmi užitečné pro řadu různých aplikací, včetně medicíny, průmyslu a uměleckých oborů.
 	
@@ -214,12 +215,12 @@
 	\subsection{Vybrané moduly}
 	
 	\paragraph{} Pro ovládání motorů bylo nutné vybrat \uv{řídící jednotku}. Pro tento účel se nejen kvůli rozměrům jevila jako jasná volba Arduino Nano, ale kvůli ceně bylo lepší sáhnout po dostupnějším klonu: \textbf{\textit{Robotdyn Arduino Nano V3}}.
-	Piny na arduinu jsou přístupné pouze ze spodní strany desky, což je vzhledem k jeho umístění v robotovi dosti nešikovné. Elegantním řešením problému je takzvaný terminál, který piny zpřístupní z boků.
+	Piny na Arduinu jsou přístupné pouze ze spodní strany desky, což je vzhledem k jeho umístění v robotovi dosti nešikovné. Elegantním řešením problému je takzvaný terminál, který piny zpřístupní z boků.
 	
 	\paragraph{} Kvůli předpokládanému univerzálnímu využití robota bylo nutné zvolit také vhodný pohon. Tím se ukázaly být krokové motory. K motorům jsou potřeba také řadiče a to kvůli velkým proudům, které mohou motory procházet.
 	Aby mohl být robot alespoň částečně autonomní, je téměř nutností přidat nějaké vstupní periferie, které poslouží k získávání zpětné vazby k řízení, jako například: \textbf{\textit{Ultrazvukový měřič vzdálenosti HY-SRF05}}.
 	
-	\paragraph{} Pro správné fungování robota bylo nutné zvolit vhodné napájení. U autonomního zařízení je jasnou volbou nabíjecí baterie a díky své popularitě a rozšíření je nejlepší možností \textbf{\textit{Li-ion baterie 18650}} v kombinaci s dobíjecím modulem \textbf{\textit{M 401A}}.
+	\paragraph{} Pro správné fungování robota bylo nutné zvolit vhodné napájení. U autonomního zařízení je jasnou volbou nabíjecí baterie a díky své popularitě a rozšíření je nejlepší možností \textbf{\textit{Li-ion baterie 18650}} v kombinaci s dobíjecím modulem \textbf{\textit{M 401A}} a step-up měničem \textbf{\textit{M 407}}.
 	Na baterii je také nutné vybrat vhodný držák a vzhledem k jejímu umístění je potřeba zvolit takový, který baterii udrží ve správné pozici i při hrubším zacházení s robotem.
 	Je také nutné mít možnost robota nějak vypnout/odpojit (přerušit obvod), v ideálním případě napájecí obvod kompletně izolovat. Proto je dobré zvolit dvoucestný přepínač, například \textit{\textbf{posuvný dvojitý přepínač}}.
 	
@@ -251,9 +252,9 @@
 	
 	Aby se zabránilo prokluzování kol na osách krokových motorů, jsou navržená kola vybavena integrovanou matičkou a šroubkem M2, které pomocí tření zabrání sklouznutí kola z osy.
 	
-	Pro zvýšení přilnavosti kol k podkladu při pohybu robota byla použita toroidová těsnění (průměr 42mm/5,5mm), která jsou usazena v drážce na kolech.
+	Pro zvýšení přilnavosti kol k podkladu při pohybu robota byla použita toroidová těsnění (průměr 42mm/5,5mm) jako pneumatiky, která jsou usazena v drážce na kolech.
 	
-	Základ robota obsahuje pouze Arduino a moduly, které zajišťují základní funkce: pohyb, napájení a sběr dat ze vstupní periferie (Ultrazvukového senzoru).
+	Základ robota obsahuje pouze Arduino a moduly, které zajišťují základní funkce: pohyb, napájení a sběr dat ze vstupní periferie (ultrazvukového senzoru).
 	
 	\begin{figure}[H]
 		\centering
@@ -274,15 +275,116 @@
 	% Software
 	\newpage
 	\section{Software}
-	\begin{tabular}{|c|c|c|c|}
-		\hline
-		g 			\\
-		get a value	\\
-		\hline
-		s 			\\
-		set a value \\
-		\hline
-	\end{tabular}
+	
+	\paragraph{}Hlavní činností Arduina je nízkoúrovňová správa základního hardwarového vybavení robota, tedy krokových motorů a ultrazvukového senzoru.
+	
+	Pro řízení krokových motorů existuje několik knihoven, avšak žádná z nich nesplňovala požadavky na paralelizaci s ostatními procesy. Z tohoto důvodu jsem vytvořil vlastní knihovnu využívající možnosti paralelního ovládání motorů na základě zadané rychlosti a počtu kroků. Využil jsem objektově orientovaného přístupu a každý motor je tak nezávislou instancí společné třídy.
+	
+	Podobný přístup využívá i opensource knihovna NewPing pro měření vzdálenosti od překážky ultrazvukovým senzorem. 
+	
+	Pro komunikaci mezi Arduinem a nedřízeným systémem, např. Raspberry Pi nebo PC, jsem si navrhl jednoduchý komunikační protokol umožňující snadné a intuitivní ovládání motorů a měření vzdálenosti od překážky (viz tabulka níže).
+	
+	\begin{figure}[H]
+		\begin{spacing}{1}
+			\begin{tabular}{|c|c|c|c|}
+				\hline
+				\textbf{g}			&	\textbf{r}		&	\textbf{v}		& \\
+				získat hodnotu		&	pravý motor		&	rychlost (rpm)	& \\
+									&	\textbf{l}		&	\textbf{n}		& \\
+									&	levý motor		&	počet kroků		& \\
+				&&&\\
+									&	\textbf{u}		&					& \\
+									&	ultrazvukový senzor &				& \\
+				\hline
+				\textbf{s}			&	\textbf{r}		&	\textbf{v}		& \textbf{\textpm000}\\
+				nastavit hodnotu	&	pravý motor		&	rychlost (rpm)	& hodnota (-150 až +150)\\
+									&	\textbf{l}		&	\textbf{n}		& \textbf{0000}\\
+									&	levý motor		&	počet kroků		& hodnota (0 až 9999)\\
+				&&&\\
+									&	\textbf{u}		&	\textbf{0}		& \\
+									&	ultrazvukový senzor & zapnuto/vypnuto & \\
+				\hline
+			\end{tabular}
+		\end{spacing}
+	\end{figure}
+	
+	Například:\par
+	\textbf{"srv+149"} -- Arduino nastaví rychlost pravého motoru na 14,9 rpm (otáček za minutu).\par
+	\textbf{"gu"} -- Arduino vrátí hodnotu získanou z ultrazvukového senzoru.
+				
+	
+	V případě žádosti o získání hodnoty vrátí Arduino po sériové lince požadovanou hodnotu jen jako číslo.
+	
+	%Závěr
+	\newpage
+	\section{Závěr}
+	\paragraph{} 
+	
+	Téma této ročníkové práce jsem si zvolil na základě předchozích praktických zkušeností s návrhem vlastních robotů. Pro první konstrukce jsem používal na laserové gravírce vyřezávanou překližku a později mi rozšíření a zlevnění 3D tisku umožnilo používat i tyto moderní technologie. 
+	Kostru, kryt, kola a kluzáky tohoto robota jsem vytiskl na 3D tiskárnách na VOŠ a SPŠE Plzeň.
+	
+	Arduino, ultrazvukový senzor, Raspberry Pi Zero 2 w a kamera jsou z mých vlastních zásob, ostatní moduly/součásti pro napájení a pohon jsem zakoupil přímo pro tento projekt na webu https://techfun.sk, https://radiokus.cz a https://dratek.cz.
+	
+	Krokové motory by se mohli zdát jako nevhodně zvolené pro jejich pomalost, ale zvolil jsem je z důvodu jejich robustnosti a odolnosti, protože pro použití ve výuce není rychlost rozhodující.
+	
+	Pro krátkodobé použití s možností baterii kdykoli dobít je jedna baterie zcela postačující a robot tak může být kompaktnější.
+	
+	Po praktických zkušenostech s návrhem této verze programovatelného auta bych do budoucna uvažoval o vlastním návrhu plošného spoje integrujícího funkce většiny použitých modulů. V tomto návrhu jsem také podcenil velikost potřebného prostoru pro vedení kabelů. Kryt je tedy velice těsný a při častější manipulaci hrozí poškození některých kabelů.
+	
+	V této fázi Raspberry Pi s kamerou není plně integrován do robota a slouží pouze k demonstraci možností komunikace s robotem a v příštím návrhu bych jej chtěl pojmout jako rozšiřitelný kapotovaný modul pro větší odolnost.
+	
+	Přínosem této ročníkové práce pro mě byly hlavně nové zkušenosti s návrhem šasi v https://onshape.com a tvorbou vlastní knihovny pro ovládání krokových motorů.
+	
+	Také jsem si uvědomil, jak je důležité si práce na projektu rozvrhnout s dostatečným časovým předstihem a snažit se je dodržet.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=360pt]{real_rozlozeno}
+		\caption{Foto rozloženého auta}
+		\label{fig:real_rozlozeno}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=360pt]{real_kostra_zadek}
+		\caption{Foto kostry auta zezadu}
+		\label{fig:real_kostra_zadek}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=360pt]{real_vse}
+		\caption{Foto složeného auta}
+		\label{fig:real_vse}
+	\end{figure}
+	
+	%Seznam obrázků
+	\newpage
+	\listoffigures
+	
+	%
+	\newpage
+	\section*{Seznam příloh}
+	\addcontentsline{toc}{section}{Seznam příloh}
+	\begin{spacing}{1}
+		\paragraph{} Příloha I.: KOSTRA - výkres	
+		\paragraph{} Příloha II.: KRYT - výkres	
+		\paragraph{} Příloha III.: KOLO - výkres	
+		\paragraph{} Příloha IV.: KLUZÁK - výkres	
+		\paragraph{} Příloha V.: Schéma zapojení - výkres
+		\paragraph{} Příloha VI.: Kód projektu - MLSC\_arduino.zip (elektronicky)
+		\paragraph{} Příloha VII.: 28byj-48\_uln2003\_datasheet.pdf (elektronicky)
+		\paragraph{} Příloha VIII.: BSS138.pdf (elektronicky)
+		\paragraph{} Příloha IX.: camera-module-2-mechanical-drawing.pdf (elektronicky)
+		\paragraph{} Příloha X.: camera-module-2-schematics.pdf (elektronicky)
+		\paragraph{} Příloha XI.: Gravitech\_Arduino\_Nano3\_0.pdf (elektronicky)
+		\paragraph{} Příloha XII.: HY-SRF05-ETC.pdf (elektronicky)
+		\paragraph{} Příloha XIII.: Logic\_Level\_Bidirectional.pdf (elektronicky)
+		\paragraph{} Příloha XIV.: MT3608.pdf (elektronicky)
+		\paragraph{} Příloha XV.: raspberry-pi-zero-2-w-productbrief.pdf (elektronicky)
+		\paragraph{} Příloha XVI.: raspberry-pi-zero-2-w-reduced-schematics.pdf (elektronicky)
+		\paragraph{} Příloha XVII.: TP4056-micro-usb.pdf (elektronicky)
+	\end{spacing}
+	
+	
 	
 \end{spacing}
 

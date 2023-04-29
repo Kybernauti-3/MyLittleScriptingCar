@@ -39,7 +39,7 @@ EightStepMotor::EightStepMotor(int revolution, int pin_1, int pin_2, int pin_3, 
  * Sets the speed in revolutions per minute
  * Calculates the time to wait between pulses.
  */
-void EightStepMotor::setRPM(long rpm)
+void EightStepMotor::setRPM(float rpm)
 {
   if (rpm > 0) {
     this->running = 1;
