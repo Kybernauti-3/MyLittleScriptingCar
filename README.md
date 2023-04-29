@@ -16,6 +16,7 @@ These are the components (and their 3D models) I'm going to use in this projekt:
 | Logic converter | Bi-directional logic converter | [Techfun - I2C logic converter](https://techfun.sk/cs/produkt/i2c-logick%C3%BD-konverter-5v-3-3v-4-kan%C3%A1lov%C3%BD/) | [GrabCAD - logic converter](https://grabcad.com/library/logic-level-converter-5v-to-3-3v-module-1) |
 | Charger + Potection | TP4056 Micro USB | [Dratek - TP4056 Micro USB](https://dratek.cz/arduino/971-micro-usb-nabijecka-baterii.html) | [GrabCAD - TP4056 Micro USB](https://grabcad.com/library/tp4056-cargador-de-baterias-litio-lipo-5v-1a-1) |
 | Battery holder | 18650 Li-Ion Holder | [Techfun - 18650 Holder](https://techfun.sk/cs/produkt/drz%C3%A1k-pro-jednu-18650-li-ion-baterii/) | [GrabCAD - 18650 Holder](https://grabcad.com/library/18650-battery-holder-generic-1) |
+| Step-up converter | M 407 s MT3608 | [RadioKus - M 407](https://www.radiokus.cz/m-407-napajeci-modul-step-up-menic-2a-s-mt3608) | []() |
 | Battery | 18650 Li-Ion 2800mAh 10A | [Techfun - 18650 2800mAh](https://techfun.sk/cs/produkt/18650-baterie-tenpower-inr18650-22he-2800mah-10a/) | []() |
 
 TODO:
@@ -24,7 +25,7 @@ TODO:
 - [x] Design chassis
 - [x] Print and ready the chassis
 - [x] Complete the hardware
-- [ ] Write the software
+- [x] Write the software
 - [ ] Write the framework
 - [ ] Add some use for the camera
 - [ ] Finalize
