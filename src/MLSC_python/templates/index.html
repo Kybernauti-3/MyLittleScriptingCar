@@ -4,13 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="static/scripts.js"></script>
     <link rel="icon" href="static/Linux.ico">
+    <link rel="stylesheet" href="static/styles.css">
     <title>MLSC</title>
 </head>
-<body>
-    <h1>Hello!</h1>
+<body onunload="connection.close();">
+    <h1>My Little Scripting Car</h1>
     <h2>Oh...</h2>
     <p>Interesting...</p>
+
+    <input type="range" id="velocity" min="-150" max="150" value="0" orient="vertical"
+           oninput="connection.send('sv' + this.value);"
+           onchange="this.value=0; connection.send('sv0');">
     <img src="video_feed">
+    <input type="range" id="velocity" min="-180" max="180" value="0"
+           oninput="connection.send('sa' + this.value);"
+           onchange="this.value=0; connection.send('sa0');">
+
+    <br>
+    UlstraSonic sensor: <input type="checkbox" id="uschange" oninput="uschange(connection)">
+    <div>Distance: <span id="ultrasonic">0</span> cm</div>
+    
+    <script>
+        var connection = new WebSocket('ws:'+location.hostname+':8010/ws');
+        var keysdown = {};
+
+        m = setInterval(() => { connection.send("sn720") }, 2000);
+
+        // keydown handler
+        $(document).keydown(function(e){
+            // Do we already know it's down?
+            if (keysdown[e.keyCode]) {
+                // Ignore it
+                return;
+            }
+
+            // Remember it's down
+            keysdown[e.keyCode] = true;
+
+            // Do our thing
+            sendkeys(connection, keysdown);
+        });
+
+        // keyup handler
+        $(document).keyup(function(e){
+            // Remove this key from the map
+            delete keysdown[e.keyCode];
+
+            // Do our thing
+            sendkeys(connection, keysdown);
+        });
+
+        connection.onmessage = function(e){
+            var ultrasonic = document.getElementById('ultrasonic')
+            ultrasonic.textContent = e.data
+        }
+
+    </script>
 </body>
 </html>
