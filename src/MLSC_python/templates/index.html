@@ -24,7 +24,7 @@
            onchange="this.value=0; connection.send('sa0');">
 
     <br>
-    UlstraSonic sensor: <input type="checkbox" id="uschange" oninput="uschange(connection)">
+    UlstraSonic sensor: <input type="checkbox" id="uschange" oninput="uschange(connection, this)">
     <div>Distance: <span id="ultrasonic">0</span> cm</div>
     
     <script>

@@ -14,8 +14,7 @@ function sendkeys(connection, keys){
     connection.send(direction)
 }
 
-function uschange(connection){
-    checkbox = document.getElementById('uschange')
+function uschange(connection, checkbox){
     if (checkbox.checked) {
         connection.send("su1");
         us = setInterval(() => { connection.send("ug") }, 500);
