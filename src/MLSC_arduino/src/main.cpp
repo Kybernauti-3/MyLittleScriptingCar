@@ -86,8 +86,8 @@ void doSerial() {
     
     // If the string is complete, run this:
     if (incomingChar == '\n') {
-      Serial.print("Received string: ");
-      Serial.println(command);
+      // Serial.print("Received string: ");
+      // Serial.println(command);
       doCommand(command);
       command = "";
       return;

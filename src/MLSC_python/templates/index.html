@@ -12,16 +12,14 @@
 </head>
 <body onunload="connection.close();">
     <h1>My Little Scripting Car</h1>
-    <h2>Oh...</h2>
-    <p>Interesting...</p>
 
     <input type="range" id="velocity" min="-150" max="150" value="0" orient="vertical"
-           oninput="connection.send('sv' + this.value);"
-           onchange="this.value=0; connection.send('sv0');">
+           oninput="sendslid(connection, 'rotation', 'velocity');"
+           onchange="this.value=0; sendslid(connection, 'rotation', 'velocity');">
     <img src="video_feed">
-    <input type="range" id="velocity" min="-180" max="180" value="0"
-           oninput="connection.send('sa' + this.value);"
-           onchange="this.value=0; connection.send('sa0');">
+    <input type="range" id="rotation" min="-180" max="180" value="0"
+           oninput="sendslid(connection, 'rotation', 'velocity');"
+           onchange="this.value=0; sendslid(connection, 'rotation', 'velocity');">
 
     <br>
     UlstraSonic sensor: <input type="checkbox" id="uschange" oninput="uschange(connection, this)">
@@ -31,7 +29,7 @@
         var connection = new WebSocket('ws:'+location.hostname+':8010/ws');
         var keysdown = {};
 
-        m = setInterval(() => { connection.send("sn720") }, 2000);
+        m = setInterval(() => { connection.send("sn:720") }, 2000);
 
         // keydown handler
         $(document).keydown(function(e){
